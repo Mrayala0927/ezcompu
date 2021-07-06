@@ -1,17 +1,17 @@
 <?php
 
-require_once "models/gestorSlide.php";
-require_once "models/gestorArticulos.php";
-require_once "models/gestorGaleria.php";
-require_once "models/gestorVideos.php";
-require_once "models/gestorMensajes.php";
+require_once "controladores/plantilla.controlador.php";
+require_once "controladores/usuarios.controlador.php";
+require_once "controladores/categorias.controlador.php";
+require_once "controladores/productos.controlador.php";
+require_once "controladores/clientes.controlador.php";
+require_once "controladores/ventas.controlador.php";
 
-require_once "controllers/template.php";
-require_once "controllers/gestorSlide.php";
-require_once "controllers/gestorArticulos.php";
-require_once "controllers/gestorGaleria.php";
-require_once "controllers/gestorVideos.php";
-require_once "controllers/gestorMensajes.php";
+require_once "modelos/usuarios.modelo.php";
+require_once "modelos/categorias.modelo.php";
+require_once "modelos/productos.modelo.php";
+require_once "modelos/clientes.modelo.php";
+require_once "modelos/ventas.modelo.php";
 
-$template = new TemplateController();
-$template -> template();
+$plantilla = new ControladorPlantilla();
+$plantilla -> ctrPlantilla();
